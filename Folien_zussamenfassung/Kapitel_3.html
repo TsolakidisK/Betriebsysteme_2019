@@ -13,14 +13,20 @@
     .myCenter {
         text-align: center;
     }
+    .myMarginTop10{
+        margin-top:10px;
+    }
 </style>
 
 <body>
     <div class="container myCenter">
         <div class="row">
             <div class="col">
-                <h1 class="alert alert-primary">IPC und Race Conditions</h1>
-                <div class="alert alert-warning">
+                <div class="btn btn-primary btn-block myMarginTop10" data-toggle="collapse" href="#collapseTsolas" role="button"
+                    aria-expanded="false" aria-controls="collapseTsolas">
+                    <h2>IPC und Race Conditions</h2>
+                </div>
+                <div class="alert alert-warning collapse" id="collapseTsolas">
                     <table class="table">
                         <thead>
                             <tr>

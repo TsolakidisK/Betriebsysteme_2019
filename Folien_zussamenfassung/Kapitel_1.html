@@ -13,14 +13,21 @@
     .myCenter {
         text-align: center;
     }
+
+    .myMarginTop10 {
+        margin-top: 10px;
+    }
 </style>
 
 <body>
     <div class="container myCenter">
-        <div class="row">
+        <div class="row Kapitel_1">
             <div class="col">
-                <h1 class="alert alert-primary">Einführung und Grundlagen</h1>
-                <div class="alert alert-warning">
+                <div class="btn btn-primary btn-block myMarginTop10" data-toggle="collapse" href="#collapseTsolas"
+                    role="button" aria-expanded="false" aria-controls="collapseTsolas">
+                    <h2>Einführung und Grundlagen</h2>
+                </div>
+                <div class="alert alert-warning collapse" id="collapseTsolas">
                     <table class="table">
                         <thead>
                             <tr>
@@ -57,7 +64,8 @@
                             </tr>
                             <tr>
                                 <th scope="row">6</th>
-                                <td>Geschichte der Betriebsysteme (Stapelverarbeitung, Multiprogramming, Spooling, Timesharing)</td>
+                                <td>Geschichte der Betriebsysteme (Stapelverarbeitung, Multiprogramming, Spooling,
+                                    Timesharing)</td>
                                 <th>28-51</th>
                             </tr>
                             <tr>
@@ -75,6 +83,7 @@
                 </div>
             </div>
         </div>
+        
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
