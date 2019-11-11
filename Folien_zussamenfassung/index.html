@@ -17,6 +17,10 @@
     .myMarginTop10 {
         margin-top: 10px;
     }
+
+    .myGreen {
+        color: green;
+    }
 </style>
 
 <body>
@@ -25,7 +29,157 @@
             <p>Willkommen auf der Betriebsysteme-Zusammenfassung von TK</p>
             <p>Alles was sich hier befindet wurde von mir persönlich zusammengefasst und ist kein offizieles Dokument
             </p>
-            <small>Not responsive under 360px</small>
+            <small>Not responsive under 360px,</small>
+            <small>Contact: inf2058@hs-worms.de</small>
+        </div>
+        <div class="row KlausurSoSe19">
+            <div class="col">
+                <div class="btn btn-primary btn-block myMarginTop10" data-toggle="collapse"
+                    href="#collapseTsolasKlausur" role="button" aria-expanded="false"
+                    aria-controls="collapseTsolasKlausur">
+                    <h5>Klausur Sommersemester 2019</h5>
+                </div>
+                <div class="alert alert-warning collapse" id="collapseTsolasKlausur">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Fragen</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Zwei Funktionen eines Bsys, die typischerweiße nicht in einem Mikrokern enthalten
+                                    sind</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Begriffe erläutern: "Idle Zustand eines Prozesses", "Spooling", "Timesharing",
+                                    "Multitasking"</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Unterschiede Virtueller und Hardware Befhelzeiger</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Wie viele Befhelzeiger werden typischer Weiße von einem Bsys mit n Prozessen und m
+                                    Programme verwaltet?</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Was sagt das Speedup eines Prozesses aus?</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>Der serielle Ateil eines Prozesses läge bei 0.2. Welchen speed up erreichen sie bei
+                                    einer Parallelesierung mit 1.000 CPUs? Weshalb wird dieser Wert nicht erreicht?</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">7</th>
+                                <td>Child - Parent Programmieraufgabe. MUSSS ICH NOCH HOCHLADEN</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">8</th>
+                                <td>Was verstehen Sie unter Copy-on-write?</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">9</th>
+                                <td>Erläutern Sie das konzept des virtuellen Speichers</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">10</th>
+                                <td>Was verstehen Sie unter Prepaging?</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">11</th>
+                                <td>Wozu dient der Working-set-Algorithmus?</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">12</th>
+                                <td>Unterschiede zwischen Preemptive und non-preeemptive Scheduling</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">13</th>
+                                <td>Was ist echtzeit Scheduling?</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">14</th>
+                                <td>Context switch vs Mode switch</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">15</th>
+                                <td>Welche sind die Vorteile des Lottery-Scheduling Algorithmus?</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">16</th>
+                                <td>Wie funktioniert der Multi level-Feedback-Queue Algorithmus?</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">17</th>
+                                <td>IPC: Was verstehen Sie unter Barriere? Was ist Mutex? Ist es automatisch ein
+                                    semaphor?
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">18</th>
+                                <td>
+                                    <p>Der Syscall kill ermöglicht es einen Prozess mit SIGKILL zu beenden <span
+                                            class="myGreen">(TRUE)</span></p>
+                                    <p>Beim Runterfahren erhalten die noch laufende Prozesse erst das Signal SIGTERM und
+                                        dann SIGKILL <span class="myGreen">(TRUE)</span></p>
+                                    <p>kill (-3,SIGHUB) sendet das signal SIGHUB und die Prozessgruppe <span
+                                            class="myGreen">(TRUE)</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">19</th>
+                                <td>Was versteht man unter Race Conditions unter dem Kürzel "TOCTTOU" ?</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">20</th>
+                                <td>
+                                    <p>Unter welchen Bediengungen kann ein Prozess einen Rückgabewert an den laufenden
+                                        Prozess liefern?</p>
+                                    <p>Welcher kann vom Programmierer kontrolliert werden?</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">21</th>
+                                <td>Grenzen sie eine Swachstelle von eine Verwundbarkeit ab</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">22</th>
+                                <td>Wie kann eine Verwundbarkeit zu einer Bedrohung werden?</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">23</th>
+                                <td>Definieren sie einen verdeckten Kanal im Kontext Multi-Level-Security</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">24</th>
+                                <td>Nennen Sie ein Einsatzscenario für einen verdeckten Kanal (Wozu wird er benötigt?)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">25</th>
+                                <td>Was ist Salt? Wozu dient es zu einer Hashfunktion von speichern von Passwörtern?
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">26</th>
+                                <td>Eine Datei wird in einem Verzeichniss angelegt. Welche Verwaltungsvorgänge muss das
+                                    Dateisystem dazu durchführen?</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">25</th>
+                                <td>Welchen Nutzen bietet der FHS?</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
         <div class="row Kapitel_1">
             <div class="col">
