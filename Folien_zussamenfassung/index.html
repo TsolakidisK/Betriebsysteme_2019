@@ -21,16 +21,26 @@
     .myGreen {
         color: green;
     }
+
+    .alert-danger {
+        background-color: #BD5D38;
+    }
+
+    .myColorRed {
+        color: red;
+    }
 </style>
 
 <body>
     <div class="container myCenter myMarginTop10">
-        <div class="alert alert-danger">
+        <div class="alert alert-danger text-white">
             <p>Willkommen auf der Betriebsysteme-Zusammenfassung von TK</p>
             <p>Alles was sich hier befindet wurde von mir persönlich zusammengefasst und ist kein offizieles Dokument
             </p>
             <small>Not responsive under 360px,</small>
             <small>Contact: inf2058@hs-worms.de</small>
+            <br>
+            <small>LAST EDIT: 03.12.19</small>
         </div>
         <div class="row KlausurSoSe19">
             <div class="col">
@@ -337,63 +347,259 @@
                         <tbody>
                             <tr>
                                 <th scope="row">1</th>
-                                <td>Multitasking</td>
-                                <th>87</th>
+                                <td>Interprozesskommunikation + Techniken</td>
+                                <th>160-162</th>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
-                                <td>Was ist ein Prozess + Quasiparallelität</td>
-                                <th>88-89</th>
+                                <td>Pipes und FIFOs</td>
+                                <th>163-166</th>
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
-                                <td>Befhelzeiger und virtueller Befhelzeiger</td>
-                                <th>90-95</th>
+                                <td>Shared Memory</td>
+                                <th>167-169</th>
                             </tr>
                             <tr>
                                 <th scope="row">4</th>
-                                <td>CPU Auslastung und Speed up</td>
-                                <th>96-101</th>
+                                <td>Message Queues</td>
+                                <th>170-171</th>
                             </tr>
                             <tr>
                                 <th scope="row">5</th>
-                                <td>Unterschiede von Prozessen</td>
-                                <th>102-105</th>
+                                <td>Unix-Domain-Sockets</td>
+                                <th>171-173</th>
                             </tr>
                             <tr>
                                 <th scope="row">6</th>
-                                <td>Prozesserzeugung, Prozesshierarchie, Prozessbediengungen, Prozesszustände</td>
-                                <th>106-124</th>
+                                <td>Signale</td>
+                                <th>173-183</th>
                             </tr>
                             <tr>
                                 <th scope="row">7</th>
-                                <td>Der Stack</td>
-                                <th>125-131</th>
+                                <td>Race Condition, was kann passieren?</td>
+                                <th>186-194</th>
                             </tr>
                             <tr>
                                 <th scope="row">8</th>
-                                <td>Was sind Threads</td>
-                                <th>132-142</th>
+                                <td>Lösung: File Locks</td>
+                                <th>195-199</th>
                             </tr>
                             <tr>
                                 <th scope="row">9</th>
-                                <td>Multithreading + Programmieren mit Threads</td>
-                                <th>143-153</th>
+                                <td>Lösung: Temporäre Dateien</td>
+                                <th>200-202</th>
                             </tr>
                             <tr>
                                 <th scope="row">10</th>
-                                <td>Thread Architektur</td>
-                                <th>154-155</th>
+                                <td>Wichtige Anmerkungen + <span class="myColorRed">OpenSSH Bug</span></td>
+                                <th>203-205</th>
                             </tr>
                             <tr>
                                 <th scope="row">11</th>
-                                <td>Was sind Threads</td>
-                                <th>132-142</th>
+                                <td>Semaphoren + <span class="myColorRed">EVP</span></td>
+                                <th>206-214</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">12</th>
+                                <td><span class="myColorRed">EVP</span> + Deadlocks</td>
+                                <th>215-218</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">13</th>
+                                <td><span class="myColorRed">Semaphore / Philosophenproblem</span></td>
+                                <th>219-235</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">14</th>
+                                <td>Monitore</td>
+                                <th>236-244</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">15</th>
+                                <td>Barrieren</td>
+                                <th>245-246</th>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
+        </div>
+        <div class="row Kapitel_4">
+            <div class="col">
+                <div class="btn btn-primary btn-block myMarginTop10" data-toggle="collapse" href="#collapseTsolas4"
+                    role="button" aria-expanded="false" aria-controls="collapseTsolas4">
+                    <h5>4 - Scheduling, Optimierungsproblem des S. und S.-Algorithmen</h5>
+                </div>
+                <div class="alert alert-warning collapse" id="collapseTsolas4">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Themen</th>
+                                <th scope="col">Seiten</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Scheduling</td>
+                                <th>249-250</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Warum ist Scheduling nicht trivial?</td>
+                                <th>251-257</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Triviales Scheduling</td>
+                                <th>258-260</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Scheduling: Optimierungsproblem</td>
+                                <th>261-263</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Scheduling: Context Switching + Prozessverhalten</td>
+                                <th>264-266</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>Wann sollte Scheduling erfolgen? </td>
+                                <th>267</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">7</th>
+                                <td>Non-Preemptive Multitasking + Preemptive Multitasking</td>
+                                <th>268-270</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">8</th>
+                                <td>Ziele von Schedulingstrategien</td>
+                                <th>271-274</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">9</th>
+                                <td>Schedulingalgorithmen (Es sind viele! Alle lernen)</td>
+                                <th>275-294</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">10</th>
+                                <td><span class="myColorRed">Scheduling für Threads + weitere Anmerkungen</span></td>
+                                <th>295-296</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row Kapitel_5">
+            <div class="col">
+                <div class="btn btn-primary btn-block myMarginTop10" data-toggle="collapse" href="#collapseTsolas5"
+                    role="button" aria-expanded="false" aria-controls="collapseTsolas5">
+                    <h5>5 - Speicherverwaltung + Seitenersetzungsalgorithmen</h5>
+                </div>
+                <div class="alert alert-warning collapse" id="collapseTsolas5">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Themen</th>
+                                <th scope="col">Seiten</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Speicherverwaltung - Einführung - Theorie</td>
+                                <th>299-305</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Speicherhierarche - Aufteilung des physikalischen Speichers</td>
+                                <th>306-312</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Speicherabstraktion + Fits</td>
+                                <th>313-330</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Page Replacement + Strategien</td>
+                                <th>332-339</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row Kapitel_6">
+            <div class="col">
+                <div class="btn btn-primary btn-block myMarginTop10" data-toggle="collapse" href="#collapseTsolas6"
+                    role="button" aria-expanded="false" aria-controls="collapseTsolas6">
+                    <h5>6 - Dateisysteme</h5>
+                </div>
+                <div class="alert alert-warning collapse" id="collapseTsolas6">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Themen</th>
+                                <th scope="col">Seiten</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Dateisysteme Einführung + Anforderungen</td>
+                                <th>342-349</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Dateinamen + Dateitypen</td>
+                                <th>352-353</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Grundlegende Operationen auf Dateien + Verzeichnisse</td>
+                                <th>354-356</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Dateisystemlayouts</td>
+                                <th>358-364</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Inodes</td>
+                                <th>365-370</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>Virtual Filesystems (VFS)</td>
+                                <th>371-372</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">7</th>
+                                <td><span class="myColorRed">Journaling</span></td>
+                                <th>373-376</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">8</th>
+                                <td><span class="myColorRed">User oder Kernelspace + Filesystem Hierarchy Standard</span></td>
+                                <th>377-378</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="m-5">
+            <hr>
         </div>
     </div>
 </body>
